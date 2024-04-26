@@ -8,6 +8,7 @@ import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Features from "@/components/Features";
 
 function Landing() {
   return (
@@ -15,6 +16,7 @@ function Landing() {
       <NavBar />
       <Hero />
       <About />
+      <Features />
       <Footer />
     </>
   );
