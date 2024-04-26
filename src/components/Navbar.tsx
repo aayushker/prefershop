@@ -1,5 +1,5 @@
 // import '@/customCSS/main.css';
-import 
+
 import React from 'react';
 
 function NavBar(){
