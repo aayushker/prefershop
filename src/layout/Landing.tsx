@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Features from "@/components/Features";
+import FAQ from "@/components/FAQ";
 
 function Landing() {
   return (
@@ -17,6 +18,8 @@ function Landing() {
       <Hero />
       <About />
       <Features />
+      <FAQ />
+      
       <Footer />
     </>
   );
