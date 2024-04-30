@@ -5,7 +5,7 @@ function Footer(){
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-about">
               <a href="index.html" className="logo d-flex align-items-center">
-                <span>PickZ</span>
+                <span>PreferShop</span>
               </a>
               <p>Providing solutions to every individual.</p>
               <div className="social-links d-flex mt-4">
@@ -56,7 +56,7 @@ function Footer(){
     
         <div className="container copyright text-center mt-4">
           <p>
-            &copy; <span>Copyright</span> <strong className="px-1">PickZ</strong>
+            &copy; <span>Copyright</span> <strong className="px-1">PreferShop</strong>
             <span>All Rights Reserved</span>
           </p>
           <div className="credits">

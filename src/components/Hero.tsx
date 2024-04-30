@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import "@/vendor/bootstrap/css/bootstrap.min.css";
-import "@/vendor/bootstrap-icons/bootstrap-icons.css";
-import "@/vendor/glightbox/css/glightbox.css";
-import "@/vendor/swiper/swiper-bundle.min.css";
-import "@/vendor/aos/aos.css";
-import "@/assests/main.css";
+// import "@/vendor/bootstrap/css/bootstrap.min.css";
+// import "@/vendor/bootstrap-icons/bootstrap-icons.css";
+// import "@/vendor/glightbox/css/glightbox.css";
+// import "@/vendor/swiper/swiper-bundle.min.css";
+// import "@/vendor/aos/aos.css";
+import "@/assets/main.css";
 
 function Hero() {
     return (
         <>
             <section id="hero" className="hero">
-                {/* <Image src="" alt="" data-aos="fade-in" width={100} height={100}/> */}
+                <Image src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in" width={100} height={100}/>
 
                 <div className="container">
                     <div className="row">
