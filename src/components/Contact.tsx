@@ -72,7 +72,7 @@ function Contact(){
                   </div>
   
                   <div className="col-md-12">
-                    <textarea className="form-control" name="message" rows="6" id="message" placeholder="Message" required></textarea>
+                    <textarea className="form-control" name="message" rows={6} id="message" placeholder="Message" required></textarea>
                   </div>
 
                 </div>
