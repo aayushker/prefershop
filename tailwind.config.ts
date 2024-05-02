@@ -1,5 +1,5 @@
 // tailwind.config.js
-import type { PluginAPI } from 'tailwindcss';
+// import type { PluginAPI } from 'tailwindcss';
 const { nextui } = require("@nextui-org/react");
 import type { Config } from "tailwindcss";
 const svgToDataUri = require("mini-svg-data-uri");
@@ -41,7 +41,7 @@ const config: Config = {
 };
  
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: PluginAPI) {
+function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
