@@ -6,13 +6,15 @@ import {
   Button,
   Input,
 } from "@nextui-org/react";
+import Signup from "./Signup";
 import Login from "./Login";
+import { Sign } from "crypto";
 
 export default function LoginOverlay() {
   const content = (
     <PopoverContent className="w-[420px] flex justify-between align-middle">
       {(titleProps) => (
-        <Login />
+        true ? <Login /> : <Signup />
       )}
     </PopoverContent>
   );
@@ -31,9 +33,7 @@ export default function LoginOverlay() {
             Login
           </Button>
         </PopoverTrigger>
-        {/* {content} */}
         {content}
-        {/* <Login /> */}
       </Popover>
     </div>
   );
