@@ -11,10 +11,17 @@ import Login from "./Login";
 import { Sign } from "crypto";
 
 export default function LoginOverlay() {
+
+
+  const [isLogin, setIsLogin] = React.useState(true);
+  const [userLoggedIn, setUserLoggedIn] = React.useState(false); 
+
+  const toggleUserLoggedIn = () => setUserLoggedIn(!userLoggedIn);
+
   const content = (
     <PopoverContent className="w-[420px] flex justify-between align-middle">
       {(titleProps) => (
-        true ? <Login /> : <Signup />
+        userLoggedIn ? <Login /> : <Signup />
       )}
     </PopoverContent>
   );
@@ -29,8 +36,8 @@ export default function LoginOverlay() {
         backdrop="blur"
       >
         <PopoverTrigger>
-          <Button color="warning" variant="flat" className="capitalize">
-            Login
+        <Button color="warning" variant="flat" className="capitalize" onClick={toggleUserLoggedIn}>
+            {userLoggedIn ? 'Logout' : 'Login'}
           </Button>
         </PopoverTrigger>
         {content}

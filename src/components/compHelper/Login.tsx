@@ -24,20 +24,11 @@ export default function Login() {
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-          <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Atmaram Tukaram" type="text" />
-          </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Bhide" type="text" />
-          </LabelInputContainer>
-        </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
           <Input id="email" placeholder="someone@example.com" type="email" />
         </LabelInputContainer>
+        <p>Or</p>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="number">Phone Number</Label>
           <Input id="number" placeholder="0123456789" />
