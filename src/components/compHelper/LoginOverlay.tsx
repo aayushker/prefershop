@@ -9,13 +9,13 @@ import {
 import Login from "./Login";
 
 export default function LoginOverlay() {
-  // const content = (
-  //   <PopoverContent className="w-[240px]">
-  //     {(titleProps) => (
-  //       <Login />
-  //     )}
-  //   </PopoverContent>
-  // );
+  const content = (
+    <PopoverContent className="w-[420px] flex justify-between align-middle">
+      {(titleProps) => (
+        <Login />
+      )}
+    </PopoverContent>
+  );
 
   return (
     <div className="flex flex-wrap gap-4">
@@ -32,7 +32,8 @@ export default function LoginOverlay() {
           </Button>
         </PopoverTrigger>
         {/* {content} */}
-        <Login />
+        {content}
+        {/* <Login /> */}
       </Popover>
     </div>
   );
