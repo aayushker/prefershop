@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/utils/hero-highlight";
-import SearchBar from "./SearchBar";
+import SearchBar from "./compHelper/SearchBar";
 
 function Hero() {
   return (

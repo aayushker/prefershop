@@ -1,8 +1,19 @@
 "use client";
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
-import { ThemeSwitcher } from "./ThemeSwitcher";
-import LoginOverlay from "./LoginOverlay";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  DropdownItem,
+  DropdownTrigger,
+  Dropdown,
+  DropdownMenu,
+  Avatar,
+} from "@nextui-org/react";
+import { ThemeSwitcher } from "./compHelper/ThemeSwitcher";
+import LoginOverlay from "./compHelper/LoginOverlay";
 
 export default function App() {
   return (
